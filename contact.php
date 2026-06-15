@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Portfolio - contact</title>
     <link
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
         rel="stylesheet">
@@ -34,6 +34,40 @@
             </div>
         </div>
     </nav>
+    
+    <main class="container py-5">
+        <h1>Contact</h1>
+
+        <form action= "send.php" method = "POST">
+            <div class="mb-3">
+                <label for="naam" class="form-label">Naam</label>
+                <input type="text" id="naam" name="naam" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label">E-mail</label>
+                <input type="email" id="email" name="email" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="bericht" class="form-label">Bericht</label>
+                <textarea id="bericht" name="bericht" class="form-control" rows="5" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-outline-dark">
+                Versturen
+            </button>
+        </form>
+    </main>
+
+    <footer class="border-top py-3">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 Mijn Portfolio</p>
+        </div>
+    </footer>
+
+</body>
+</html>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
